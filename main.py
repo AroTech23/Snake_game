@@ -35,8 +35,8 @@ while is_on:
     for segment in snake.original_segment[1:]:
 
         if snake.head.distance(segment) < 10:
-            is_on=False
-            scoreboard.game_over()
+            scoreboard.reset()
+            snake.reset()
 
 
 screen.exitonclick()
